@@ -38,6 +38,44 @@ ol {
     width: 240px;
 }
 
+.subPage > header h1 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+}
+.subPage  > header h1 span {
+    background-image: linear-gradient(135deg,#e6ba5d 0%,#9ac78a 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .subPage h2 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: .17em;
+    margin-bottom: 10px;
+  }
+  .subPage > .lead {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 11px;
+    letter-spacing: .05em;
+    line-height: 2;
+  }
+  .subPage h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .subPage > main {
+    padding: 0 20px;
+  }
+
 /* hamburger menu */
 .MENU {
     position: fixed;
@@ -185,6 +223,9 @@ footer {
 footer p {
     color: #f0f0f0;
 }
+
+/* About */
+
 
 /* slide */
 .slider-controller {
