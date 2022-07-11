@@ -99,14 +99,15 @@ header {
 .link li a {
     display: block;
     background-color: #73d0bcaa;
-    width: 300px;
     text-decoration: none;
     text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 
 .link li a span {
     display: block;
-    padding: 12px 15px 10px;
+    padding-bottom: 25px;
     font-size: 18px;
 }
 
