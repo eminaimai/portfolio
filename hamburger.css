@@ -1,0 +1,88 @@
+/* hamburger menu */
+.MENU {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.MENU > .menu-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    padding-top: 5px;
+    height: 12px;
+}
+
+.MENU > .menu-icon > .navicon {
+    background: #ffc107;
+    display: block;
+    height: 2px;
+    width: 31px;
+    position: relative;
+    transition: background .4s ease-out;
+}
+
+.MENU > .menu-icon > .navicon::before,
+.MENU > .menu-icon > .navicon::after {
+    background: #ffc107;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .4s ease-out;
+    width: 100%;
+}
+
+.MENU > .menu-icon > .navicon::before {top: 10px;}
+.MENU > .menu-icon > .navicon::after {top: -10px;}
+
+.MENU > .menu {
+    background-color: rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 6s;
+    text-align: center;
+}
+
+.MENU > .menu li:first-of-type {
+    padding-top: 25px;
+    padding-top: 50px;
+}
+
+.MENU > .menu li a {
+    display: block;
+    padding: 24px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.MENU > .menu li a:hover {
+    background-color: #f0f0f0;
+}
+
+.MENU > .menu-btn {
+    display: none;
+}
+
+.MENU > .menu-btn:checked ~ .menu {
+    max-height: 338px;
+    transition: max-height .6s;
+}
+
+.MENU > .menu-btn:checked ~ .menu-icon .navicon {background: transparent;}
+
+.MENU > .menu-btn:checked ~ .menu-icon .navicon::before {transform: rotate(-45deg);top: 0;}
+.MENU > .menu-btn:checked ~ .menu-icon .navicon::after {transform: rotate(45deg);top: 0;}
+
+.MENU > .menu-icon {
+    top: 26px;
+}
+
+.MENU > .menu-icon > .navicon,
+.MENU > .menu-icon > .navicon::before,
+.MENU > .menu-icon > .navicon::after {
+  background: #f0f0f0;
+}

@@ -1,43 +1,40 @@
-const image_01src = 'url("img/image01.jpg")';
-const image_02src = 'url("img/image02.jpg")';
-const image_03src = 'url("img/image03.jpg")';
-const image_04src = 'url("img/image04.jpg")';
+const picArray = [
+    {src: './img/x21015_01.png'},
+    {src: './img/x21015_02.png'},
+    {src: './img/fish1.png'},
+    {src: './img/fish2.png'},
+    {src: './img/fish3.png'},
+    {src: './img/meisi.png'}
+    ];
+    
+    let counter = 0;
+    
+    function changePicture() {
+      if (counter < picArray.length) {
+        document.getElementById('pics').src = picArray[counter].src;
+        counter++;
+      } else {
+        document.getElementById('pics').src = picArray[0].src;
+        counter = 1;
+      } 
+    }
+    
+    let playingID = 0;
+    
+    function playSlidedeshow () {
+      if (playingID == 0) {
+        document.getElementById('playButton').innerHTML = 'STOP';
+        playingID = setInterval(changePicture, 2000);
+      } else {
+        document.getElementById('playButton').innerHTML = 'START';
+        clearInterval(playingID);
+        playingID = 0;
+      }
+    }
 
-function nextImage() {
-  const header = document.getElementById('slide');
-  const nowBg = header.style.backgroundImage;
-  console.log(nowBg);
-
-  if(nowBg == image_01src){
-    header.style.backgroundImage = image_02src;
-  }else if(nowBg == image_02src){
-    header.style.backgroundImage = image_03src;
-  }else if(nowBg == image_03src){
-    header.style.backgroundImage = image_04src;
-  }else{
-    header.style.backgroundImage = image_01src;
-  }
-}
-
-function prevImage(){
-  const header = document.getElementById('slide');
-  const nowBg = header.style.backgroundImage;
-  console.log(nowBg);
-
-
-  if(nowBg == image_01src){
-    header.style.backgroundImage = image_04src;
-  }else if(nowBg == image_02src){
-    header.style.backgroundImage = image_01src;
-  }else if(nowBg == image_03src){
-    header.style.backgroundImage = image_02src;
-  }else{
-    header.style.backgroundImage = image_03src;
-  }
-}
-
-document.getElementById('slide').style.backgroundImage = image_01src;
-document.getElementById('sc-to-left').addEventListener('click', prevImage);
-document.getElementById('sc-to-right').addEventListener('click', nextImage);
-
-setInterval(nextImage, 5000);
+document.querySelector('#contact-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    e.target.elements.name.value = '';
+    e.target.elements.email.value = '';
+    e.target.elements.message.value = '';
+  });
