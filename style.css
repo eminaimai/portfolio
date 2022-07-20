@@ -1,5 +1,15 @@
 @charset "utf-8";
 
+@font-face {
+  font-family: biz;
+  src: url(font/BIZUDGothic-Bold.ttf);
+}
+
+@font-face {
+  font-family: biz-r;
+  src: url(font/BIZUDGothic-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +24,7 @@
 
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Catamaran','Noto Sans JP',sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -41,6 +52,8 @@ header {
 }
 
 .mainPage > header h1 {
+    font-family: biz;
+    font-size: 35px;
     width: 300px;
     background-image: linear-gradient(135deg,#e6ba5d 0%,#9ac78a 100%);
     -webkit-background-clip: text;
@@ -51,7 +64,8 @@ header {
 
 .subPage > header h1 {
     text-align: center;
-    font-size: 42px;
+    font-family: biz;
+    font-size: 30px;
     font-weight: 700;
     letter-spacing: .17em;
     text-transform: uppercase;
@@ -98,7 +112,7 @@ header {
 
 .link li a {
     display: block;
-    background-color: #73d0bcaa;
+    background-color: #f0bfe5ef;
     text-decoration: none;
     text-align: center;
     margin-left: 300px;
@@ -112,14 +126,17 @@ header {
 }
 
 .link li a:hover {
-    color: pink;
+    color: rgb(212, 70, 212);
 }
 
 /* footer */
 footer {
+    width: 100%;
+    left: 0;
     background-color: #000;
-    padding: 14px 10px 20px;
+    padding: 30px 0;
     text-align: center;
+    font-family: biz-r;
 }
 
 footer > .social {
@@ -142,7 +159,7 @@ footer > .social li a {
   }
 
 footer > .social li a:hover {
-    color: pink;
+    color: rgb(212, 70, 212);
   }
 
 footer p {
@@ -152,6 +169,7 @@ footer p {
 /* About */
 .detail {
     display: flex;
+    justify-content: center;
 }
 
 .detail ul, ol {
@@ -162,13 +180,18 @@ footer p {
 .detail ul li, ol li {
     color: black;
     border-left: solid 8px pink;/*左側の線*/
-    background: rgb(251, 234, 249);/*背景色*/
+    background: rgb(247, 217, 243);/*背景色*/
     margin-bottom: 5px;/*下のバーとの余白*/
     line-height: 1.5;
     border-radius: 0 15px 15px 0;/*右側の角だけ丸く*/
     padding: 0.5em;
     list-style-type: none!important;
   }  
+
+  .detail > .photo {
+    margin-right: 20px;
+  }
+
 
 .subPage h2 {
     font-size: 20px;
@@ -179,10 +202,12 @@ footer p {
   }
 .subPage .lead {
     text-align: center;
-    margin-bottom: 30px;
-    font-size: 11px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    font-size: 15px;
     letter-spacing: .05em;
     line-height: 2;
+    font-family: biz-r;
   }
 .subPage h3 {
     font-size: 30px;
@@ -193,6 +218,29 @@ footer p {
 .subPage main {
     padding: 0 20px;
   }
+
+.intro h3 {
+  font-family: biz;
+  font-weight: bold;
+}
+
+.detail ul {
+  font-family: biz-r;
+}
+
+.skills {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}  
+
+.skills h3 {
+  font-family: biz;
+  font-weight: bold;
+}
+
+.skills p {
+  font-family: biz-r;
+}
 
 .skills > .photoshop > .skills-level-all {
     display: flex;
@@ -217,6 +265,26 @@ footer p {
 .skills > .C > .skills-level-all {
     display: flex;
     justify-content: center;
+}
+
+.photoshop > .skills-level-all {
+  margin-right: 25px;
+}
+
+.illustrator > .skills-level-all {
+  margin-right: 38px;
+}
+
+.HTML > .skills-level-all {
+  margin-left: 50px;
+}
+
+.CSS > .skills-level-all {
+  margin-left: 50px;
+}
+
+.C > .skills-level-all {
+  margin-left: 27px;
 }
 
 /* Contact */
@@ -302,7 +370,7 @@ html {
     width: 30%;
     font-weight: normal;
     padding: 1em .5em;
-    background: #73d0bcaa;
+    background: #f0bfe5ef;
     color: #fff;
     position: relative;
     -moz-box-sizing: border-box;
@@ -469,7 +537,7 @@ html {
   }
   .btn input {
     display: inline-block;
-    background: #eee;
+    background: #f0bfe5ef;
     padding: .5em 4em;
     color: #000;
     text-decoration: none;
@@ -504,3 +572,200 @@ html {
     background-color: white;
     font-family:  serif;
   }
+
+  #slide button {
+    background-color: #f0bfe5ef;
+    width: 100px;
+    height: 30px;
+  }
+
+  /* MORE */
+  @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Teko:700);
+.snip1543 {
+  background-color: #fff;
+  color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  margin: 10px;
+  max-width: 315px;
+  min-width: 230px;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.snip1543 *,
+.snip1543 *:before,
+.snip1543 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1543 img {
+  backface-visibility: hidden;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.snip1543:before,
+.snip1543:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  background-color: #f0bfe5ef;
+  opacity: 0.5;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1543:before {
+  -webkit-transform: skew(30deg) translateX(-80%);
+  transform: skew(30deg) translateX(-80%);
+}
+
+.snip1543:after {
+  -webkit-transform: skew(-30deg) translateX(-70%);
+  transform: skew(-30deg) translateX(-70%);
+}
+
+.snip1543 figcaption {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  bottom: 0;
+  padding: 25px 40% 25px 20px;
+}
+
+.snip1543 figcaption:before,
+.snip1543 figcaption:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f0bfe5ef;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  content: '';
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.snip1543 figcaption:before {
+  -webkit-transform: skew(30deg) translateX(-100%);
+  transform: skew(30deg) translateX(-100%);
+}
+
+.snip1543 figcaption:after {
+  -webkit-transform: skew(-30deg) translateX(-90%);
+  transform: skew(-30deg) translateX(-90%);
+}
+
+.snip1543 h3,
+.snip1543 p {
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 1px;
+}
+
+.snip1543 h3 {
+  font-family: 'Teko', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+.snip1543 p {
+  font-size: 0.9em;
+  margin-top: 15px;
+}
+
+.snip1543 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1543:hover h3,
+.snip1543.hover h3,
+.snip1543:hover p,
+.snip1543.hover p {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 0.9;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.snip1543:hover:before,
+.snip1543.hover:before {
+  -webkit-transform: skew(30deg) translateX(-20%);
+  transform: skew(30deg) translateX(-20%);
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+.snip1543:hover:after,
+.snip1543.hover:after {
+  -webkit-transform: skew(-30deg) translateX(-10%);
+  transform: skew(-30deg) translateX(-10%);
+}
+
+.snip1543:hover figcaption:before,
+.snip1543.hover figcaption:before {
+  -webkit-transform: skew(30deg) translateX(-40%);
+  transform: skew(30deg) translateX(-40%);
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+.snip1543:hover figcaption:after,
+.snip1543.hover figcaption:after {
+  -webkit-transform: skew(-30deg) translateX(-30%);
+  transform: skew(-30deg) translateX(-30%);
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+/* MORE */
+.more1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.more1 ul, ol {
+  padding: 0;
+  position: relative;
+  margin-top: 30px;
+}
+
+.more1 ul li, ol li {
+  color: black;
+  border-left: solid 8px pink;/*左側の線*/
+  background: rgb(247, 217, 243);/*背景色*/
+  margin-bottom: 5px;/*下のバーとの余白*/
+  line-height: 1.5;
+  border-radius: 0 15px 15px 0;/*右側の角だけ丸く*/
+  padding: 0.5em;
+  list-style-type: none!important;
+}  
+
+.more1 p {
+  margin-right: 20px;
+  border: outset 7px #f0bfe5ef;
+}

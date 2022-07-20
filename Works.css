@@ -55,7 +55,7 @@ a.btn-border-shadow:hover:before {
 
 a.btn-border-shadow--color {
   border-radius: 0;
-  background: #73d0bcaa;
+  background: #f0bfe5ef;
   height: 60px;
 }
 
@@ -73,6 +73,77 @@ a.btn-border-shadow--color:before {
 
 .w-fish {
     display: flex;
+}
+
+/* 名刺 */
+.w-meisi {
+    justify-content: center;
+}
+
+.w-meisi h3 {
+  font-family: biz;
+}
+
+.w-meisi p {
+  font-family: biz-r;
+}
+
+.w-meisi img {
+    margin-right: 50px;
+}
+
+.w-meisi > .btn {
+    margin-top: 20rem;
+    font-family: biz;
+}
+
+/* MAYA1 */
+.w-maya {
+    justify-content: center;
+}
+
+.w-maya h3 {
+  font-family: biz;
+}
+
+.w-maya p {
+  font-family: biz-r;
+}
+
+
+.w-maya img {
+    margin-left: 50px;
+}
+
+.w-maya > .btn {
+    margin-top: 10rem;
+    font-family: biz;
+}
+
+/* MAYA2 */
+.w-fish {
+    justify-content: center;
+}
+
+.w-fish h3 {
+  font-family: biz;
+}
+
+.w-fish p {
+  font-family: biz-r;
+}
+
+.w-fish img {
+    margin-right: 50px;
+}
+
+.w-fish > .btn {
+    margin-top: 10rem;
+    font-family: biz;
+}
+
+main h3 {
+    padding-top: 5rem;
 }
 
 footer {

@@ -59,3 +59,9 @@ $('.slider').slick({
 $('.slider').on('touchmove', function(event, slick, currentSlide, nextSlide){
     $('.slider').slick('slickPlay');
 }); 
+
+$(".hover").mouseleave(
+    function() {
+      $(this).removeClass("hover");
+    }
+  );
