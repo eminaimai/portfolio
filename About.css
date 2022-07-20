@@ -1,0 +1,92 @@
+.detail {
+    display: flex;
+    justify-content: center;
+}
+
+.detail ul, ol {
+    padding: 0;
+    position: relative;
+  }
+ 
+.detail ul li, ol li {
+    color: black;
+    border-left: solid 8px pink;/*左側の線*/
+    background: rgb(247, 217, 243);/*背景色*/
+    margin-bottom: 5px;/*下のバーとの余白*/
+    line-height: 1.5;
+    border-radius: 0 15px 15px 0;/*右側の角だけ丸く*/
+    padding: 0.5em;
+    list-style-type: none!important;
+  }  
+
+  .detail > .photo {
+    margin-right: 20px;
+  }
+
+  .intro h3 {
+    font-family: biz;
+    font-weight: bold;
+  }
+  
+  .detail ul {
+    font-family: biz-r;
+  }
+  
+  .skills {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }  
+  
+  .skills h3 {
+    font-family: biz;
+    font-weight: bold;
+  }
+  
+  .skills p {
+    font-family: biz-r;
+  }
+  
+  .skills > .photoshop > .skills-level-all {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .skills > .illustrator > .skills-level-all {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .skills > .HTML > .skills-level-all {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .skills > .CSS > .skills-level-all {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .skills > .C > .skills-level-all {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .photoshop > .skills-level-all {
+    margin-right: 25px;
+  }
+  
+  .illustrator > .skills-level-all {
+    margin-right: 38px;
+  }
+  
+  .HTML > .skills-level-all {
+    margin-left: 50px;
+  }
+  
+  .CSS > .skills-level-all {
+    margin-left: 50px;
+  }
+  
+  .C > .skills-level-all {
+    margin-left: 27px;
+  }

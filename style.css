@@ -38,6 +38,29 @@ ol {
   list-style: none;
 }
 
+.mainPage {
+  width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-attachment: fixed;
+    opacity: 0.75; 
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+.subPage {
+  width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-attachment: fixed;
+    opacity: 0.75; 
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+
 /* header */
 header {
     background-color: #000;
@@ -166,33 +189,7 @@ footer p {
     color: #f0f0f0;
 }
 
-/* About */
-.detail {
-    display: flex;
-    justify-content: center;
-}
-
-.detail ul, ol {
-    padding: 0;
-    position: relative;
-  }
- 
-.detail ul li, ol li {
-    color: black;
-    border-left: solid 8px pink;/*左側の線*/
-    background: rgb(247, 217, 243);/*背景色*/
-    margin-bottom: 5px;/*下のバーとの余白*/
-    line-height: 1.5;
-    border-radius: 0 15px 15px 0;/*右側の角だけ丸く*/
-    padding: 0.5em;
-    list-style-type: none!important;
-  }  
-
-  .detail > .photo {
-    margin-right: 20px;
-  }
-
-
+/* subPage */
 .subPage h2 {
     font-size: 20px;
     font-weight: 700;
@@ -218,74 +215,6 @@ footer p {
 .subPage main {
     padding: 0 20px;
   }
-
-.intro h3 {
-  font-family: biz;
-  font-weight: bold;
-}
-
-.detail ul {
-  font-family: biz-r;
-}
-
-.skills {
-  margin-top: 100px;
-  margin-bottom: 50px;
-}  
-
-.skills h3 {
-  font-family: biz;
-  font-weight: bold;
-}
-
-.skills p {
-  font-family: biz-r;
-}
-
-.skills > .photoshop > .skills-level-all {
-    display: flex;
-    justify-content: center;
-}
-
-.skills > .illustrator > .skills-level-all {
-    display: flex;
-    justify-content: center;
-}
-
-.skills > .HTML > .skills-level-all {
-    display: flex;
-    justify-content: center;
-}
-
-.skills > .CSS > .skills-level-all {
-    display: flex;
-    justify-content: center;
-}
-
-.skills > .C > .skills-level-all {
-    display: flex;
-    justify-content: center;
-}
-
-.photoshop > .skills-level-all {
-  margin-right: 25px;
-}
-
-.illustrator > .skills-level-all {
-  margin-right: 38px;
-}
-
-.HTML > .skills-level-all {
-  margin-left: 50px;
-}
-
-.CSS > .skills-level-all {
-  margin-left: 50px;
-}
-
-.C > .skills-level-all {
-  margin-left: 27px;
-}
 
 /* Contact */
 html {
@@ -577,11 +506,10 @@ html {
     background-color: #f0bfe5ef;
     width: 100px;
     height: 30px;
+    margin-top: 10px;
   }
 
   /* MORE */
-  @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
-@import url(https://fonts.googleapis.com/css?family=Teko:700);
 .snip1543 {
   background-color: #fff;
   color: #ffffff;
@@ -741,31 +669,6 @@ html {
   transition-delay: 0.1s;
 }
 
-/* MORE */
-.more1 {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.more1 ul, ol {
-  padding: 0;
-  position: relative;
-  margin-top: 30px;
-}
-
-.more1 ul li, ol li {
-  color: black;
-  border-left: solid 8px pink;/*左側の線*/
-  background: rgb(247, 217, 243);/*背景色*/
-  margin-bottom: 5px;/*下のバーとの余白*/
-  line-height: 1.5;
-  border-radius: 0 15px 15px 0;/*右側の角だけ丸く*/
-  padding: 0.5em;
-  list-style-type: none!important;
-}  
-
-.more1 p {
-  margin-right: 20px;
+#slide img {
   border: outset 7px #f0bfe5ef;
 }
