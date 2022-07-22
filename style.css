@@ -45,7 +45,7 @@ ol {
     left: 0;
     z-index: -1;
     background-attachment: fixed;
-    opacity: 0.75; 
+    opacity: 0.8; 
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 }
 

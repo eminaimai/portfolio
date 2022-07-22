@@ -270,8 +270,12 @@ html {
     text-align: center;
     padding: 30px;
     font-family: biz-r;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .btn {
     padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

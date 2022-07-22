@@ -78,6 +78,7 @@ a.btn-border-shadow--color:before {
 /* 名刺 */
 .w-meisi {
     justify-content: center;
+    margin-bottom: 10rem;
 }
 
 .w-meisi h3 {
@@ -100,6 +101,7 @@ a.btn-border-shadow--color:before {
 /* MAYA1 */
 .w-maya {
     justify-content: center;
+    margin-bottom: 10rem;
 }
 
 .w-maya h3 {
@@ -123,6 +125,7 @@ a.btn-border-shadow--color:before {
 /* MAYA2 */
 .w-fish {
     justify-content: center;
+    margin-bottom: 10rem;
 }
 
 .w-fish h3 {
@@ -152,4 +155,10 @@ footer {
 
 h2 {
   font-family: biz;
+  margin-top: 50px;
+}
+
+.snip1543 img {
+  margin-right: 7px;
+  margin-left: 10px;
 }

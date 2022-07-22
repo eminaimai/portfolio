@@ -32,13 +32,6 @@ const picArray = [
       }
     }
 
-document.querySelector('#contact-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    e.target.elements.name.value = '';
-    e.target.elements.email.value = '';
-    e.target.elements.message.value = '';
-  });
-
 $('.slider').slick({
     autoplay: true,//自動的に動き出すか。初期値はfalse。
     autoplaySpeed: 3000,//次のスライドに切り替わる待ち時間

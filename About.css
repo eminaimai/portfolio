@@ -26,6 +26,8 @@
   .intro h3 {
     font-family: biz;
     font-weight: bold;
+    margin-top: 150px;
+    margin-bottom: 50px;
   }
   
   .detail ul {
@@ -33,8 +35,8 @@
   }
   
   .skills {
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin-top: 150px;
+    margin-bottom: 150px;
   }  
   
   .skills h3 {
@@ -87,6 +89,16 @@
     margin-left: 50px;
   }
   
-  .C > .skills-level-all {
-    margin-left: 27px;
+  
+
+  .skills-level-all {
+    margin-bottom: 10px;
+  }
+
+  .skills-level1 img {
+    margin-left: 15px;
+  }
+
+  .profile {
+    margin-top: 35px;
   }
