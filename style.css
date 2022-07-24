@@ -25,10 +25,21 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Catamaran','Noto Sans JP',sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: #2c2c2c;
+    background-size: cover;
+    background-image: url("./img/sky.jpeg");  /* 背景画像設定 */
+    background-attachment: fixed; /* 背景画像をスクロールしても同じ位置になるように設定 */
+    animation: bg 60s infinite linear;
+  }
+
+  @keyframes bg {
+    0% {
+      background-position: 0 0;
+    }
+    100%  {
+      background-position: 360px -360px;
+    }
   }
 
 ul,
@@ -38,28 +49,17 @@ ol {
   list-style: none;
 }
 
-.mainPage {
-  width: 100%;
+.filter {
+    width: 100%;
     height: 100%;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
     background-attachment: fixed;
-    opacity: 0.8; 
+    opacity: 0.8;
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 }
-
-.subPage {
-  width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-attachment: fixed;
-    opacity: 0.75; 
-    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-}
-
 
 /* header */
 header {
@@ -67,6 +67,7 @@ header {
     padding: 14px 10px 20px;
     text-align: center;
     color: #f0f0f0;
+    opacity: 0.8;
 }
 
 .mainPage > header {
@@ -127,10 +128,15 @@ header {
 /* main */
 .link {
     padding: 0 20px;
+    font-family: biz;
 }
 
 .link li {
-    margin-bottom: 40px;
+    margin-bottom: 100px;
+}
+
+.link li > .ab {
+    padding-top: 100px;
 }
 
 .link li a {
@@ -138,8 +144,8 @@ header {
     background-color: #f0bfe5ef;
     text-decoration: none;
     text-align: center;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 500px;
+    margin-right: 500px;
 }
 
 .link li a span {
@@ -160,6 +166,7 @@ footer {
     padding: 30px 0;
     text-align: center;
     font-family: biz-r;
+    opacity: 0.8;
 }
 
 footer > .social {
@@ -217,16 +224,23 @@ footer p {
   }
 
 /* slide */
+#slide {
+  min-height: 100vh;
+}
+
 #slide img {
-    width: 300px;
-    height: 300px;
-    margin-left: 190px;
+    border: outset 7px #f0bfe5ef;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    margin-left: 90px;
+    margin-top: 100px;
   }
   
   .slideshow-container {
     width: 680px;
     height: 600px;
-    margin: 10px auto 10px auto;
+    margin: 10px auto 100px auto;
   }
   
  button {
@@ -234,7 +248,7 @@ footer p {
     display: block;
     font-size: 20px;
     background-color: white;
-    font-family:  serif;
+    font-family:  biz;
   }
 
   #slide button {
@@ -402,8 +416,4 @@ footer p {
   transform: skew(-30deg) translateX(-30%);
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
-}
-
-#slide img {
-  border: outset 7px #f0bfe5ef;
 }

@@ -125,7 +125,7 @@ a.btn-border-shadow--color:before {
 /* MAYA2 */
 .w-fish {
     justify-content: center;
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
 }
 
 .w-fish h3 {
@@ -161,4 +161,8 @@ h2 {
 .snip1543 img {
   margin-right: 7px;
   margin-left: 10px;
+}
+
+.lead2 > .lead {
+  margin-bottom: 100px;
 }

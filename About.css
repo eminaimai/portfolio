@@ -19,8 +19,15 @@
     list-style-type: none!important;
   }  
 
-  .detail > .photo {
+  .detail > .photo  img{
     margin-right: 20px;
+    object-fit: cover;
+    border-radius: 0%;
+    object-position: 30px 0px;
+  }
+
+  .lead1 > .lead {
+    margin-top: 100px;
   }
 
   .intro h3 {
@@ -42,6 +49,7 @@
   .skills h3 {
     font-family: biz;
     font-weight: bold;
+    margin-bottom: 50px;
   }
   
   .skills p {
@@ -57,6 +65,16 @@
       display: flex;
       justify-content: center;
   }
+
+  .skills > .Maya2020 > .skills-level-all {
+    display: flex;
+    justify-content: center;
+}
+
+.skills > .Maya2019 > .skills-level-all {
+  display: flex;
+  justify-content: center;
+}
   
   .skills > .HTML > .skills-level-all {
       display: flex;
@@ -88,8 +106,14 @@
   .CSS > .skills-level-all {
     margin-left: 50px;
   }
-  
-  
+
+  .Maya2020 > .skills-level-all {
+    margin-right: 22px;
+  }
+
+  .Maya2019 > .skills-level-all {
+    margin-right: 22px;
+  }
 
   .skills-level-all {
     margin-bottom: 10px;
