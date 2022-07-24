@@ -40,7 +40,7 @@
 .MENU > .menu-icon > .navicon::after {top: -10px;}
 
 .MENU > .menu {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #f0bfe5ef;
     overflow: hidden;
     max-height: 0;
     transition: max-height 6s;
